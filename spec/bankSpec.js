@@ -16,11 +16,13 @@ describe('Bank', function() {
     expect(bank.getAccountNumber()).toEqual(1);
   });
 
-  it('deposits 1000 on 01/01/18', function() {
-    bank.deposit(1000, 010118);
-    expect(bank.getStatement()).toEqual(`[1000, 010118, 'C']`);
+  it('Starts with 1000 in balance', function() {
+    expect(bank.getBalance()).toEqual(1000);
   });
 
+  it('deposits £1000', function() {
+    bank.deposit(1000, new Date());
+    expect(bank.getBalance()).toEqual(2000);
+  });
 
 });
-å
