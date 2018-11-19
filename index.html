@@ -4,8 +4,8 @@
 
     <link rel="stylesheet" href="./styles.css">
 
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="./js/script.js"> </script>
     <script src="./src/bank.js"> </script>
     <title>Thermostat</title>
 
@@ -15,16 +15,26 @@
     <section>
       <h1>Account Name: <span id="accountName"></span></h1>
       <h1>Account Number: <span id="accountNumber"></span></h1>
+      <h1>Balance: <span id="balance"></span></h1>
       <div></div>
       <p>
-        <h3>Default Amount: <span id="default_amount"></span></h3>
+        <h3>Amount: <span id="default_amount"></span></h3>
         <button id="up">+</button>
         <button id="down">-</button>
       </p>
       <p>
         <button id="deposit">Deposit</button>
-        <button id="withdraw">withdraw</button>
+        <button id="withdraw">Withdraw</button>
+        <button id="printstatement">Print statement</button>
       </p>
+        <p>
+          <div>statement</div>
+          <h2><span id="statement1"></span></h2>
+          <ul id="myUl"></ul>
+
+          </span></h2>
+        </p>
     </section>
   </body>
+  <script src="./script.js"> </script>
 </html>

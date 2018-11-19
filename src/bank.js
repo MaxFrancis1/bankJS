@@ -1,21 +1,13 @@
 'use strict';
 
 function Bank() {
-  // this.DEFAULT_TEMPERATURE = 20;
-  // this.temperature = this.DEFAULT_TEMPERATURE;
-
   this.accountName = 'Max';
   this.accountNumber = 1;
   this.statement = [];
   this.DEFUALT_BALANCE = 1000;
+  this.DEFUALT_DEPOSIT = 100;
   this.balance = this.DEFUALT_BALANCE;
-  this.default_deposit = 100
-
-  // this.MINIMUM_TEMPERATURE = 10;
-  // this.powerSavingMode = true;
-  // this.MAX_LIMIT_PSM_ON = 25;
-  // this.MAX_LIMIT_PSM_OFF = 32;
-  // this.MEDIUM_ENERGY_USAGE_LIMIT = 18;
+  this.default_amount = this.DEFUALT_DEPOSIT;
 }
 
 Bank.prototype.getDefaultDeposit = function () {
@@ -23,7 +15,7 @@ Bank.prototype.getDefaultDeposit = function () {
 };
 
 Bank.prototype.getAccountName = function () {
-  return this.accountName
+  this.accountName
 };
 
 Bank.prototype.getAccountNumber = function () {
@@ -36,6 +28,14 @@ Bank.prototype.getBalance = function () {
 
 Bank.prototype.getStatement = function () {
   return this.statement
+};
+
+Bank.prototype.up = function () {
+  this.default_amount += 100
+};
+
+Bank.prototype.down = function () {
+  this.default_amount -= 100
 };
 
 Bank.prototype.deposit = function (damount, ddate) {
@@ -59,5 +59,6 @@ Bank.prototype.withdraw = function (wamount, wdate) {
 };
 
 Bank.prototype.printStatement = function () {
+
   this.statement.forEach(function(i) {console.log(i)})
 };
