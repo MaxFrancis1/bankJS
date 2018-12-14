@@ -3,7 +3,7 @@
 This is my banking app I am making using JavaScript.
 
 In this project I made a banking application that people can use how they want to. To start I made a plan on how to proceed, this included a lot of writing on a notepad.
-On the notepad I planned out how it would all work and what it would do. Also I made user storys that followed with what I wanted the app to be.
+On the notepad I planned out how it would all work and what it would do. Also I made user stories that followed with what I wanted the app to be.
 
 
 #### To run this
