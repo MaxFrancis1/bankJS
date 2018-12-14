@@ -32,12 +32,12 @@ $(document).ready(function() {
   })
 
   $('#printstatement').on('click', function() {
-for (i = 0; i < bank.statement.length; i++) {
-  var li = document.createElement("li");
-  var text = document.createTextNode('transaction no '+i+' '+JSON.stringify(bank.statement[i]));
-  li.appendChild(text);
-  document.getElementById("myUl").appendChild(li);
-}
+    for (i = 0; i < bank.statement.length; i++) {
+      var li = document.createElement("li");
+      var text = document.createTextNode('transaction no '+i+' '+JSON.stringify(bank.statement[i]));
+      li.appendChild(text);
+      document.getElementById("myUl").appendChild(li);
+    }
     bank.printStatement();
   })
 

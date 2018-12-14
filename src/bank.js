@@ -59,6 +59,5 @@ Bank.prototype.withdraw = function (wamount, wdate) {
 };
 
 Bank.prototype.printStatement = function () {
-
   this.statement.forEach(function(i) {console.log(i)})
 };
